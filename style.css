@@ -1,0 +1,86 @@
+/* IBM-Style Clean and Modern Form */
+body {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #0f62fe; /* IBM Blue */
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0f62fe;
+  outline: none;
+}
+
+.error-message {
+  color: #da1e28; /* IBM Red */
+  font-size: 12px;
+  visibility: hidden;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+input.invalid {
+  border-color: #da1e28;
+}
+
+button {
+  background-color: #0f62fe;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0353e9;
+}
+
+.success-message {
+  text-align: center;
+  color: #24a148; /* IBM Green */
+  margin-top: 15px;
+  display: none;
+}
